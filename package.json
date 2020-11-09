@@ -4,9 +4,13 @@
   "description": "API icc itagui",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev":"nodemon ."
-  },
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env = jsdom ",
+    " eject " :" react-scriptseject ", 
+    " heroku-postbuild ":" npm run build "
+    },
   "author": "Brian Olaya",
   "license": "ISC",
   "devDependencies": {
@@ -20,6 +24,7 @@
     "express-validator": "^6.6.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.10.11",
-    "nodemailer": "^6.4.14"
+    "nodemailer": "^6.4.14",
+    "serve": "^11.3.2"
   }
 }
