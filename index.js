@@ -19,6 +19,6 @@ app.use('/api/devocionales', require ('./routes/devocionales'));
 app.use('/api/nuevos', require ('./routes/nuevos'));
 
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`Server on port ${PORT}`)
 });
