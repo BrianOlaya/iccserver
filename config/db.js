@@ -9,6 +9,7 @@ const conectarBD = async () => {
       useNewUrlParser: true, //EL PRIMERO ES  LA URL QUE SE VA A CONECGTAR Y EL SEGUNDO OBJETO LA CONFIGURACION
       useUnifiedTopology: true,
       useFindAndModify: false,
+      useCreateIndex:true
     });
     console.log("DB CONECTADA");
   } catch (error) {
