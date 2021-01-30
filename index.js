@@ -16,6 +16,8 @@ app.use('/api/usuarios', require ('./routes/usuarios'));
 app.use('/api/auth', require ('./routes/auth'));
 app.use('/api/integrantes', require ('./routes/integrantes'));
 app.use('/api/devocionales', require ('./routes/devocionales'));
+app.use('/api/devocionales/:id', require ('./routes/devocionales'));
+
 app.use('/api/nuevos', require ('./routes/nuevos'));
 
 

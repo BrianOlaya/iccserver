@@ -4,7 +4,7 @@ require("dotenv").config({ path: "variables.env" });
 
 const conectarBD = async () => {
   try {
-    await mongoose.connect(process.env.DB_MONGO, {
+    await mongoose.connect('mongodb+srv://iccserver:renacerparalasnaciones2020@cluster0.kgtsa.mongodb.net/iccserver', {
       //EL METODO CONNECT DE MONGOOSWE RECIBE DOS PARAMETROS
       useNewUrlParser: true, //EL PRIMERO ES  LA URL QUE SE VA A CONECGTAR Y EL SEGUNDO OBJETO LA CONFIGURACION
       useUnifiedTopology: true,

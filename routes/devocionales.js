@@ -16,11 +16,18 @@ router.post(
   ],
   devocionalController.crearDevocional
 );
-//OBTENER INTEGRANTES
+//OBTENER DEVOCIONALES
 router.get(
   "/",
 
   devocionalController.obtenerDevocionales
+);
+
+//OBTENER DEVOCIONAL SELECT
+router.get(
+  "/:id",
+
+  devocionalController.obtenerDevocionalSelect
 );
 
 //ACTUALIZAR INFO DEVOCIONAL VIA ID

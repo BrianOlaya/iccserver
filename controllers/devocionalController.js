@@ -21,12 +21,24 @@ exports.crearDevocional = async (req, res) => {
   }
 };
 
-//OBTIENE LOS INTEGRANTES DEL USUARUIO ACTUAL
+//OBTIENE LOS DEVOCIONLAES 
 
 exports.obtenerDevocionales = async (req, res) => {
   try {
     const devocionales = await Devocional.find();
     res.json({ devocionales });
+  } catch (error) {
+    console.log(error);
+    res.status(500).send("Hubo un error");
+  }
+};
+
+//OBTIENE LOS DEVOCIONLAES 
+
+exports.obtenerDevocionalSelect = async (req, res) => {
+  try {
+    const devocionalSelect = await Devocional.findById(req.params.id);
+    res.json({ devocionalSelect });
   } catch (error) {
     console.log(error);
     res.status(500).send("Hubo un error");
