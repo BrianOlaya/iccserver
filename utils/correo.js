@@ -29,7 +29,7 @@ module.exports = {
      </p>
      <h2>Con amor, Iglesia Cruzada Cristiana-Itagüí. Renacer para las naciones.</h2> <br/>
      <h3>Cra 50a # 73a -09. Itagüí-Antioquia</h3>
-     <a href="https://www.w3schools.com" target="_blank">www.iccrenacer.com</a>
+     <a href="https://www.iccrenacer.com" target="_blank">www.iccrenacer.com</a>
     </body>
   `;
   },
