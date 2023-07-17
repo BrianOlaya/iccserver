@@ -4,14 +4,15 @@ const {createPool} = require('mysql2/promise')
  async function connectDB() {
   const conn= await createPool({
     database:'iccrenacerdb',
-    user:'h5wlokcfyp6t1ov462ur',
+    user:'96forzrq1avxfj52vuwv',
     host:'aws.connect.psdb.cloud',
-    password:'pscale_pw_RfTGsiMhqLAsZ1FU4ndorxPqWy0UhUbQcG2rzpJQrPH',
+    password:'pscale_pw_oo3i69QJF4FJWXjgy12vGtnXliHypNrrjKFwpiN6T8P',
     ssl:{
       rejectUnauthorized:false
     }
   })
 
+ 
   conn.query('SELECT * FROM USERS')
   console.log('ok..');
 }
