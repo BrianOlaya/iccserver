@@ -13,7 +13,7 @@ const {createPool} = require('mysql2/promise')
   })
 
  
-  conn.query('SELECT * FROM USERS')
+  //conn.query('SELECT * FROM USERS')
   console.log('ok..');
 }
 
