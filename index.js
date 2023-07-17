@@ -1,10 +1,11 @@
 const express = require('express');
-const conectarBD = require('./config/db');
+const connectDB = require('./config/db');
 const cors = require ('cors');
+const router = express.Router();
 
 const app = express();
 
-conectarBD();
+connectDB();
 
 app.use(cors());
 
@@ -19,6 +20,10 @@ app.use('/api/devocionales', require ('./routes/devocionales'));
 app.use('/api/devocionales/:id', require ('./routes/devocionales'));
 
 app.use('/api/nuevos', require ('./routes/nuevos'));
+
+app.use('/', (req,res)=>{
+    res.send('hola..')
+})
 
 
 app.listen(PORT, '0.0.0.0', () => {

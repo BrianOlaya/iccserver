@@ -20,6 +20,7 @@
     "express-validator": "^6.6.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.10.11",
+    "mysql2": "^3.5.2",
     "nodemailer": "^6.4.14",
     "serve": "^11.3.2"
   }
