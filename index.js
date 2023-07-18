@@ -5,7 +5,7 @@ const router = express.Router();
 
 const app = express();
 
-connectDB();
+//connectDB();
 
 app.use(cors());
 
